@@ -3,7 +3,7 @@ import java.util.*;
 
 import java.util.ArrayList;
 
-public class Buildings {
+public class Buildings extends Unit {
 String Name;
 int Id;
 List<Sensors>sensors;

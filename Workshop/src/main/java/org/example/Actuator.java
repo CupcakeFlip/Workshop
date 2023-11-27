@@ -1,6 +1,6 @@
 package org.example;
 
-public class Actuator
+public class Actuator extends Unit
 {
     private double value;
 
