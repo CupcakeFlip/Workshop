@@ -1,6 +1,9 @@
 package org.example;
 
+import java.util.UUID;
+
 public class TemperatureSensor extends Sensors{
+    private UUID id;
     @Override
     public double getValue() {
         return super.getValue();
@@ -11,8 +14,9 @@ public class TemperatureSensor extends Sensors{
         return super.toString();
     }
 
-    public TemperatureSensor (double value)
+    public TemperatureSensor (double value, UUID id)
     {
+        this.id = id;
         this.value = value;
     }
 }
