@@ -1,6 +1,6 @@
 package org.example;
 
-public class Sensors {
+public class Sensors extends Unit{
     double value = 2;
 
     public double getValue(){

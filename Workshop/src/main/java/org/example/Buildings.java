@@ -1,22 +1,24 @@
 package org.example;
 import java.util.*;
 
-public class Buildings {
+import java.util.ArrayList;
+
+public class Buildings extends Unit {
 String Name;
 UUID Id;
-List<Sensors>Sensors;
+List<Sensors>sensors;
 List<Actuator>actuators;
 
 public Buildings(String name , UUID id){
 Name=name;
 Id=id;
-Sensors = new ArrayList<Sensors>();
+sensors = new ArrayList<Sensors>();
 actuators= new ArrayList<Actuator>();
 }
 
 public void getSensors(){
-for (int i = 0; i < Sensors.size(); i++) {
-    System.out.println("Sensor"+i+Sensors.get(i).getValue());
+for (int i = 0; i < sensors.size(); i++) {
+    System.out.println("Sensor"+i+sensors.get(i).getValue());
 }
 }
 
@@ -27,11 +29,11 @@ for (int i = 0; i < actuators.size(); i++) {
 
 
 public void addTemperatureSensor(UUID sens){
-Sensors.add(new Sensors());
+sensors.add(new Sensors());
 }
 
 public void addCo2Sensor(UUID sens){
-Sensors.add(new Sensors());
+sensors.add(new Sensors());
 }
 public void RemoveSensor(){
 

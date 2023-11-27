@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
 
-    List<Buildings>list = new ArrayList<Buildings>();
+    List<Buildings>buildings = new ArrayList<Buildings>();
 
  
     public static void main(String[] args) {
