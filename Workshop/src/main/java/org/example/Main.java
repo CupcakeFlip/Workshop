@@ -15,12 +15,12 @@ public class Main {
     
   }
 
-    public void AddBuilding(String Name ,int id){
+    public void AddBuilding(String Name ,UUID id){
 
 
     }
 
-    public void RemoveBuilding(int id){
+    public void RemoveBuilding(UUID id){
         for (int i = 0; i < 3; i++) {
             
         }

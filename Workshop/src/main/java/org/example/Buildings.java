@@ -1,19 +1,46 @@
 package org.example;
 import java.util.*;
 
-import java.util.ArrayList;
-
 public class Buildings {
 String Name;
-int Id;
+UUID Id;
 List<Sensors>Sensors;
 List<Actuator>actuators;
 
-public Buildings(String name , int id){
+public Buildings(String name , UUID id){
 Name=name;
 Id=id;
 Sensors = new ArrayList<Sensors>();
 actuators= new ArrayList<Actuator>();
 }
 
+public void getSensors(){
+for (int i = 0; i < Sensors.size(); i++) {
+    System.out.println("Sensor"+i+Sensors.get(i).getValue());
+}
+}
+
+public void getActuators(){
+for (int i = 0; i < actuators.size(); i++) {
+    System.out.println("actuators"+i+actuators.get(i).getValue());
+}}
+
+
+public void addTemperatureSensor(UUID sens){
+Sensors.add(new Sensors());
+}
+
+public void addCo2Sensor(UUID sens){
+Sensors.add(new Sensors());
+}
+public void RemoveSensor(){
+
+}
+public void addVentActuator(){
+
+}
+
+public void RemoveActuator(){
+
+}
 }
