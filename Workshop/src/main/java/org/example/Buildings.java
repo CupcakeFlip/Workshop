@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public class Buildings {
 String Name;
 int Id;
-List<Sensors>Sensors;
+List<Sensors>sensors;
 List<Actuator>actuators;
 
 public Buildings(String name , int id){
 Name=name;
 Id=id;
-Sensors = new ArrayList<Sensors>();
+sensors = new ArrayList<Sensors>();
 actuators= new ArrayList<Actuator>();
 }
 
