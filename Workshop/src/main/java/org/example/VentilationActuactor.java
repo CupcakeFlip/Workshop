@@ -6,4 +6,10 @@ public class VentilationActuactor extends Actuator
     public void setValue(double value) {
         super.setValue(value);
     }
+
+    @Override
+    public String toString()
+    {
+        return "" + getValue();
+    }
 }
