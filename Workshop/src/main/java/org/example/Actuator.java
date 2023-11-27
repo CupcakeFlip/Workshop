@@ -1,5 +1,19 @@
 package org.example;
 
-public class Actuator {
-    
+public class Actuator
+{
+    private double value;
+
+
+    public void setValue (double value)
+    {
+        this.value = value;
+    }
+
+    public double getValue()
+    {
+        return value;
+    }
+
+
 }
