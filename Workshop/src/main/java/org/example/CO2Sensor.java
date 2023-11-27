@@ -10,5 +10,10 @@ public class CO2Sensor extends Sensors{
     public String toString() {
         return super.toString();
     }
+
+    public CO2Sensor (double value)
+    {
+        this.value = value;
+    }
 }
 

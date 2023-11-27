@@ -10,4 +10,9 @@ public class TemperatureSensor extends Sensors{
     public String toString() {
         return super.toString();
     }
+
+    public TemperatureSensor (double value)
+    {
+        this.value = value;
+    }
 }
