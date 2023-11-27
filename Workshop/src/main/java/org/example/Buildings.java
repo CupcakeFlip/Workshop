@@ -38,11 +38,15 @@ sensors.add(new Sensors());
 public void RemoveSensor(){
 
 }
-public void addVentActuator(){
-
+public void addVentActuator(UUID Id){
+actuators.add(new Actuator(Id));
 }
 
-public void RemoveActuator(){
-
+public void RemoveActuator(UUID Id){
+for (int i = 0; i < actuators.size(); i++) {
+    if (actuators.get(i).getId()==Id) {
+        
+    }
+}
 }
 }
